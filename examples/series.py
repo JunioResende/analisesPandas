@@ -29,6 +29,9 @@ paises = ['Brasil', 'Argentina', 'Uruguai', 'Paraguai']
 indexPais = [1, 2, 3, 4]
 populacao = [564654881.3, 1688465.5, 1685321.16, 4549884.12]
 
-ser1 = pd.Series(index=indexPais, data=paises)
+ser1 = pd.Series(index=paises, data=indexPais)
 
-print(ser1)
+print('Busca pais por nome dando como resultado seu indice')
+findPais = ser1[['Brasil']]
+
+print(findPais)
